@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <menuitem
+        id="o_real_state_menu"
+        name="Real State"
+        sequence="10"/>
+
+        <menuitem
+            id="advertisement_menu"
+            name="Advertisement"
+            parent="o_real_state_menu"
+            sequence="101"/>
+
+            <menuitem
+                id="properties_menu"
+                name="Properties"
+                action="o_properties_view_action"
+                parent="advertisement_menu"
+                sequence="1001"/>
+
+        <menuitem
+            id="settings_menu"
+            name="Settings"
+            parent="o_real_state_menu"
+            sequence="201"/>
+
+            <menuitem
+                id="property_type_menu"
+                name="Property Type"
+                action="o_property_type_action"
+                parent="settings_menu"
+                sequence="2001"/>
+            
+            <menuitem
+                id="property_tag_menu"
+                name="Property Tag"
+                action="o_property_tag_action"
+                parent="settings_menu"
+                sequence="2001"/>
+</odoo>
